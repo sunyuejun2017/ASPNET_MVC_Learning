@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("View User", "Index", "User")
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+{
+    <p>
+        UserName:@Html.TextBox("UserName")
+
+    </p>
+    <p>
+        Password:@Html.Password("Password")
+    </p>
+    <br />
+    <input type="submit" value="Submit" />
+
+
+}
+
+
