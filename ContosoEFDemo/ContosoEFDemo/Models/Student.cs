@@ -11,6 +11,8 @@ namespace ContosoEFDemo.Models
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
         public DateTime EnrollmentDate { get; set; }
+        public int stu_Number { get; set; }
+        public string UpdateDate { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }

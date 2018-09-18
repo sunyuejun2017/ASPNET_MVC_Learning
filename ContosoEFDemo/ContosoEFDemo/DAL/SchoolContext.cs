@@ -8,6 +8,7 @@ namespace ContosoEFDemo.DAL
     {
         public SchoolContext() : base("SchoolContext")
         {
+            Database.SetInitializer<SchoolContext>(null);
         }
 
         // 通过DbSet来创建数据库中的Table
